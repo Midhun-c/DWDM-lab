@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #F00000;
+  background-color: #FF0000;
 }
 
 .container {
@@ -33,7 +33,7 @@ button {
 }
 
 button {
-  background-color: black;
+  background-color: #000000;
   color: #fff;
   cursor: pointer;
 }
