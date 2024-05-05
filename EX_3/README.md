@@ -1,1 +1,1 @@
-reference : https://arxiv.org/pdf/1406.7371
+reference : https://arxiv.org/pdf/1406.7371 (apriori)
