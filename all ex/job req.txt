@@ -1,0 +1,6 @@
+Design and develop high-volume, low-latency applications for mission-critical systems, delivering high-availability and performance.
+Contribute in all phases of the product development life cycle.
+Write well-designed, testable, efficient code.
+Ensure designs are in compliance with specifications.
+Prepare and produce releases of software components.
+Support continuous improvement by investigating alternatives and technologies and presenting these for architectural review.

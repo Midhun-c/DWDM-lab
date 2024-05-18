@@ -1,0 +1,41 @@
+# 1. Install Required Packages
+install.packages(c("caret", "e1071", "randomForest", "kernlab"))
+
+# 2. Load Required Libraries
+library(caret)
+library(e1071)
+library(randomForest)
+library(kernlab)
+
+# 3. Load Dataset
+data(iris)
+
+# 4. Data Preprocessing
+# Split data into predictors and target variable
+
+predictors <- iris[, -5] # All columns except the last one
+target <- iris[, 5] # Last column
+print(predictors)
+print(target)
+# Split data into training and testing sets
+set.seed(123)
+trainIndex <- createDataPartition(target, p = 0.8, list = FALSE)
+print(trainindex)
+trainData <- predictors[trainIndex, ]
+testData <- predictors[-trainIndex, ]
+trainTarget <- target[trainIndex]
+testTarget <- target[-trainIndex]
+
+# 5. Model Building
+# Train SVM model
+svm_model <- svm(trainTarget ~ ., data = trainData, kernel = "radial")
+
+# 6. Model Evaluation
+# Predict on test data
+predictions <- predict(svm_model, newdata = testData)
+
+# Calculate accuracy
+accuracy <- mean(predictions == testTarget)
+print(paste("Accuracy:", accuracy))
+
+
